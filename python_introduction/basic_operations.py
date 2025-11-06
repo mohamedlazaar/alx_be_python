@@ -1,3 +1,11 @@
+"""
+declaring 2 variables with their values (nubmer1 = 10, number2 = 5)
+make the addition
+make the substraction
+make the multiplication
+
+print each result 
+"""
 number1 = 10
 number2 = 5
 addition =  number1 + number2
