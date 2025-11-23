@@ -11,12 +11,12 @@ def celsius_to_fahrenheit(celsius):
 
 def main():
     temperature_to_convert = float(input("Enter the temperature to convert: "))
-    conversion_type = input("Convert to (C)elsius or (F)ahrenheit? ").strip().upper()
+    temp_conversion_tool = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
     
-    if conversion_type == "C":
+    if temp_conversion_tool == "C":
         converted_temp = celsius_to_fahrenheit(temperature_to_convert)
         print(f"{temperature_to_convert}°F is {converted_temp:.2f}°C")
-    elif conversion_type == "F":    
+    elif temp_conversion_tool == "F":    
         converted_temp = fahrenheit_to_celsius(temperature_to_convert)
         print(f"{temperature_to_convert}°C is {converted_temp:.2f}°F")
     else:
