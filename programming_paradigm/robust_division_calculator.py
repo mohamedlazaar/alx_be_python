@@ -1,8 +1,12 @@
 def safe_divide(numerator, denominator):
     try:
+        # Convert inputs to float
+        num = float(numerator)
+        den = float(denominator)
+
         # Attempt division
-        result = numerator / denominator
-        return f"The result is {result:2f}"
+        result = num / den
+        return f"The result of the division is {result}"
 
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
